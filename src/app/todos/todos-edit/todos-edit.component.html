@@ -1,0 +1,12 @@
+
+<form>
+  <label for="description">Description </label> <input 
+  type="text" 
+  id="description"
+  [(ngModel)] = "todoDescription"
+  name="description"
+  >
+  <button type="button"
+  (click)="onAddTodo(todoDescription)"
+  >Add</button>
+</form>

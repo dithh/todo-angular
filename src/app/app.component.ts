@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Todo} from "./todos/todo.model"
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-ng-app';
+
+  todos: Todo[] = [
+    new Todo("Get a dev job", true),
+    new Todo("Get a dev job", false),
+    new Todo("Get a dev job", false),
+
+  ]
 }
